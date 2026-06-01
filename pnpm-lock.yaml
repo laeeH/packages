@@ -289,8 +289,8 @@ catalogs:
       specifier: ^5.0.0
       version: 5.0.0
     symlink-dir:
-      specifier: ^7.1.0
-      version: 7.1.0
+      specifier: ^10.0.0
+      version: 10.0.1
     table:
       specifier: ^6.9.0
       version: 6.9.0
@@ -318,8 +318,6 @@ catalogs:
 
 overrides:
   '@types/node': 25.4.0
-
-pnpmfileChecksum: sha256-UtXZV825NqHOBG69jsYGuWZ97+do7mk2t42sK5gvG2I=
 
 importers:
 
@@ -400,7 +398,7 @@ importers:
         version: 17.1.2
       symlink-dir:
         specifier: 'catalog:'
-        version: 7.1.0
+        version: 10.0.1
 
   is-subdir:
     dependencies:
@@ -527,7 +525,7 @@ importers:
         version: 7.0.1
       symlink-dir:
         specifier: 'catalog:'
-        version: 7.1.0
+        version: 10.0.1
       tempy:
         specifier: 'catalog:'
         version: 3.2.0
@@ -564,7 +562,7 @@ importers:
         version: 17.1.2
       symlink-dir:
         specifier: 'catalog:'
-        version: 7.1.0
+        version: 10.0.1
 
   rimraf:
     devDependencies:
@@ -959,10 +957,11 @@ packages:
 
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
+    deprecated: Potential CWE-502 - Update to 1.3.1 or higher
 
-  '@zkochan/rimraf@3.0.2':
-    resolution: {integrity: sha512-GBf4ua7ogWTr7fATnzk/JLowZDBnBJMm8RkMaC/KcvxZ9gxbMWix0/jImd815LmqKyIHZ7h7lADRddGMdGBuCA==}
-    engines: {node: '>=18.12'}
+  '@zkochan/rimraf@4.0.0':
+    resolution: {integrity: sha512-0EdBn93hMsbx4svJsKQCch+sNMuXvzWbVYqTCGdctQmxtuYK57uCURZPNiNdwS2Y31d96DMWI3BpJ9DLN2Jxfw==}
+    engines: {node: '>=22.13'}
 
   '@zkochan/which@2.0.3':
     resolution: {integrity: sha512-C1ReN7vt2/2O0fyTsx5xnbQuxBrmG5NMSbcIkPKCCfCTJgpZBsuRYzFXHj3nVq8vTfK7vxHUmzfCpSHgO7j4rg==}
@@ -1061,6 +1060,10 @@ packages:
   better-path-resolve@1.0.0:
     resolution: {integrity: sha512-pbnl5XzGBdrFU/wT4jqmJVPn2B6UHPBOhzMQkY/SPUPB6QtUXtmBHBIwCbXJol93mOpGMnQyP/+BB19q04xj7g==}
     engines: {node: '>=4'}
+
+  better-path-resolve@2.0.0:
+    resolution: {integrity: sha512-VvvsZgI0upmMbG1iEFiQ7hRG+fDJwmw7iFfKLzBVNhRd2ycauJ3+3w50ESX+pS2tvS9R2hMzijwE+vinDyqQzQ==}
+    engines: {node: '>=22.13'}
 
   brace-expansion@1.1.12:
     resolution: {integrity: sha512-9T9UjW3r0UW5c1Q7GTwllptXwhvYmEzFhzMfZ9H7FQWt+uZePjZPjBP/W1ZEyZ1twGWom5/56TF4lPcqjnDHcg==}
@@ -1455,10 +1458,6 @@ packages:
   for-each@0.3.5:
     resolution: {integrity: sha512-dKx12eRCVIzqCxFGplyFKJMPvLEWgmNtUrpTiJIR5u97zEhRG8ySrtboPHZXx7daLxQVrl643cTzbab2tkQjxg==}
     engines: {node: '>= 0.4'}
-
-  fs-extra@11.3.0:
-    resolution: {integrity: sha512-Z4XaCL6dUDHfP/jT25jJKMmtxvuwbkrD1vNSMFlo9lNLY2c5FHYSQgHPRZUjAB26TpDEoW9HCOgplrdbaPV/ew==}
-    engines: {node: '>=14.14'}
 
   fs-extra@11.3.4:
     resolution: {integrity: sha512-CTXd6rk/M3/ULNQj8FBqBWHYBVYybQ3VPBw0xGKFe3tuH7ytT6ACnvzpIQ3UZtB8yvUKC2cXn1a+x+5EVQLovA==}
@@ -2198,9 +2197,9 @@ packages:
     resolution: {integrity: sha512-pq2bWo9mVD43nbts2wGv17XLiNLya+GklZ8kaDLV2Z08gDCsGpnKn9BFMepvWuHCbyVvY7J5o5+BVvoQbmlJLg==}
     engines: {node: '>=8'}
 
-  rename-overwrite@6.0.6:
-    resolution: {integrity: sha512-bSbsw/VyMyDez6NJKxqURBCLRCm98uezWBi03UZCeEFccCNIthC6Jk5JazMjexOTdrYd4q/jIxTIwGtgk1k1gA==}
-    engines: {node: '>=18'}
+  rename-overwrite@7.0.1:
+    resolution: {integrity: sha512-tYzdjRCtRMiBg0xLqFEZH11T8HvpvhtiWE2Q8TWOpq0HAL07YBJEzC4pgfSWqLYziHCtlS16yB8tV4hFJrXvtA==}
+    engines: {node: '>=22.13'}
 
   require-from-string@2.0.2:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
@@ -2391,10 +2390,9 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  symlink-dir@7.1.0:
-    resolution: {integrity: sha512-Nnht6e6PYs5RF2JXbc43Bm9Sskfu750yAhJfi/aniLgWjtqsfL/68bLkYSX3GSp1dTPxy7mVbO+bVbMc16XKrw==}
-    engines: {node: '>=18.12'}
-    hasBin: true
+  symlink-dir@10.0.1:
+    resolution: {integrity: sha512-34rLIwj9YzKr+2BTIpvp1/sYO8i3nmzTyrtx/iOKX2qWVEbqgWMfmkG41TDXiCaRi4I7dsHfTTnxUVi9p6RnIQ==}
+    engines: {node: '>=22.13'}
 
   table@6.9.0:
     resolution: {integrity: sha512-9kY+CygyYM6j02t5YFHbNz2FN5QmYGv9zAjVp4lCDjlCw7amdckXlEt/bjMhUIfj4ThGRE4gCUH5+yGnNuPo5A==}
@@ -2887,7 +2885,7 @@ snapshots:
 
   '@ungap/structured-clone@1.3.0': {}
 
-  '@zkochan/rimraf@3.0.2': {}
+  '@zkochan/rimraf@4.0.0': {}
 
   '@zkochan/which@2.0.3':
     dependencies:
@@ -3009,6 +3007,10 @@ snapshots:
   balanced-match@4.0.4: {}
 
   better-path-resolve@1.0.0:
+    dependencies:
+      is-windows: 1.0.2
+
+  better-path-resolve@2.0.0:
     dependencies:
       is-windows: 1.0.2
 
@@ -3542,12 +3544,6 @@ snapshots:
   for-each@0.3.5:
     dependencies:
       is-callable: 1.2.7
-
-  fs-extra@11.3.0:
-    dependencies:
-      graceful-fs: 4.2.11
-      jsonfile: 6.2.0
-      universalify: 2.0.1
 
   fs-extra@11.3.4:
     dependencies:
@@ -4213,10 +4209,10 @@ snapshots:
 
   regexpp@3.2.0: {}
 
-  rename-overwrite@6.0.6:
+  rename-overwrite@7.0.1:
     dependencies:
-      '@zkochan/rimraf': 3.0.2
-      fs-extra: 11.3.0
+      '@zkochan/rimraf': 4.0.0
+      fs-extra: 11.3.4
 
   require-from-string@2.0.2: {}
 
@@ -4455,10 +4451,10 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  symlink-dir@7.1.0:
+  symlink-dir@10.0.1:
     dependencies:
-      better-path-resolve: 1.0.0
-      rename-overwrite: 6.0.6
+      better-path-resolve: 2.0.0
+      rename-overwrite: 7.0.1
 
   table@6.9.0:
     dependencies:
